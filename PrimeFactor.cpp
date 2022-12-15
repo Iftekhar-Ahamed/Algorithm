@@ -39,7 +39,7 @@ bool isPrime(ll n)
 }
 void primeFactor(vector<ll> &v, ll n)
 {
-    for (ll i = 2; i <= n; i++)
+    for (ll i = 2; i * i <= n; i++)
     {
         if (isPrime(i) && n % i == 0)
         {
@@ -59,11 +59,12 @@ void solve()
 {
     ll n;
     cin >> n;
-    
+
     vector<ll> x;
     primeFactor(x, n);
-    for(auto i:x){
-    cout<<i<<nn;
+    for (auto i : x)
+    {
+        cout << i << nn;
     }
 }
 
