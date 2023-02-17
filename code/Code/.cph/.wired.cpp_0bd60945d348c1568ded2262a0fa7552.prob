@@ -1,0 +1,1 @@
+{"name":"Local: wired","url":"/home/iftekhar/Documents/Code/wired.cpp","tests":[{"id":1673508623467,"input":"6","output":"2"},{"id":1673508629024,"input":"1","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/iftekhar/Documents/Code/wired.cpp","group":"local","local":true}

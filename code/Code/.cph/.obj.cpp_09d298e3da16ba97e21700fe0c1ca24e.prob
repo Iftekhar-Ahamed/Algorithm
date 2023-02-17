@@ -1,0 +1,1 @@
+{"name":"Local: obj","url":"/home/iftekharahamedsiddiuqee/Desktop/Code/obj.cpp","tests":[{"id":1675099089575,"input":"abc\n01\n30\nabc2\n02\n40\nabc3\n03\n50\nabc4\n04\n60\nabc5\n05\n80","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/iftekharahamedsiddiuqee/Desktop/Code/obj.cpp","group":"local","local":true}

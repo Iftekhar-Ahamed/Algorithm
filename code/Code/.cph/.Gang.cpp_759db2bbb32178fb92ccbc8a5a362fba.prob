@@ -1,0 +1,1 @@
+{"name":"Local: Gang","url":"/home/iftekharahamedsiddiuqee/Desktop/Code/Gang.cpp","tests":[{"id":1673849269629,"input":"5 5 1 1\n4\n100\n1 2\n2 3\n3 4\n3 5\n4 5\n1 5","output":"100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/iftekharahamedsiddiuqee/Desktop/Code/Gang.cpp","group":"local","local":true}
