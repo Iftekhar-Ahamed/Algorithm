@@ -37,7 +37,7 @@ typedef long int int32;
 typedef unsigned long int uint32;
 typedef long long int int64;
 typedef unsigned long long int uint64;
-#define lld long long
+#define ll long long
 #define INF (int)1e9
 #define EPS 1e-9
 #define PI 3.1415926535897932384626433832795
@@ -48,43 +48,43 @@ int dRow[] = {-1, 0, 1, 0, 1, 1, -1, -1};
 int dCol[] = {0, 1, 0, -1, 1, -1, -1, 1};
 #define nn "\n"
 
-void add(lld pos,lld &dis,vector<lld>&frq,vector<lld>&ara){
+void add(ll pos,ll &dis,vector<ll>&frq,vector<ll>&ara){
     if(frq[ara[pos]]++==0){
         dis++;
     }
 }
-void remove(lld pos,lld &dis,vector<lld>&frq,vector<lld>&ara){
+void remove(ll pos,ll &dis,vector<ll>&frq,vector<ll>&ara){
     if(--frq[ara[pos]]==0){
         dis--;
     }
 }
 void solve()
 {
-    lld n,m;
+    ll n,m;
     cin>>n>>m;
 
-    lld totalBlock = sqrt(n),dist=0;
-    lld blockSize = n/totalBlock;
-    vector<lld>ara(n),freq(n,0),queryans(m);
+    ll totalBlock = sqrt(n),dist=0;
+    ll blockSize = n/totalBlock;
+    vector<ll>ara(n),freq(n,0),queryans(m);
 
-    for(lld i=0; i<n; i++)
+    for(ll i=0; i<n; i++)
     {
         cin>>ara[i];
     }
-    vector<lld>unq(ara.begin(),ara.end());
+    vector<ll>unq(ara.begin(),ara.end());
     sort(unq.begin(),unq.end());
     unq.erase(unique(unq.begin(),unq.end()),unq.end());
 
-    for(lld i=0; i<n; i++)
+    for(ll i=0; i<n; i++)
     {
         ara[i]=lower_bound(unq.begin(),unq.end(),ara[i])-unq.begin();
     }
 
-    vector<tuple<lld,lld,lld,lld>>queris(m);
+    vector<tuple<ll,ll,ll,ll>>queris(m);
 
-    for(lld i=0; i<m; i++)
+    for(ll i=0; i<m; i++)
     {
-        lld blockpos,r,l;
+        ll blockpos,r,l;
         cin>>l>>r;
         --r;
         blockpos = --l/blockSize;
@@ -92,8 +92,8 @@ void solve()
     }
 
     sort(queris.begin(),queris.end());
-    lld R=-1,L=0;
-    for(lld q=0; q<m; q++)
+    ll R=-1,L=0;
+    for(ll q=0; q<m; q++)
     {
         auto [bpos,r,l,i] = queris[q];
         r=abs(r);
